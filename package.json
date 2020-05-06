@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "styleguide": "npx styleguidist server"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -50,7 +51,9 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.2"
+    "lint-staged": "^10.2.2",
+    "react-docgen-typescript": "^1.16.4",
+    "react-styleguidist": "^11.0.5"
   },
   "husky": {
     "hooks": {
