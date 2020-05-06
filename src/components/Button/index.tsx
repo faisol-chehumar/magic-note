@@ -15,7 +15,8 @@ type Props = {
   text: string
 }
 
-const Button = ({ text = 'Default' }: Props) => {
+const Button = ({ 
+  text = 'Default' }: Props) => {
   const classes = useStyles();
 
   return (
@@ -26,3 +27,4 @@ const Button = ({ text = 'Default' }: Props) => {
 };
 
 export default Button;
+

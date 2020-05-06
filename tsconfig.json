@@ -9,7 +9,7 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
-    "allowJs": true,
+    "allowJs": true, // Allow JavaScript files to be compiled
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -20,9 +20,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "sourceMap": true, // Generate corrresponding .map file
+    "declaration": true, // Generate corresponding .d.ts file 
+    "noUnusedLocals": true, // Report errors on unused locals
+    "noUnusedParameters": true, // Report errors on unused parameters
+    "experimentalDecorators": true, // Enables experimental support for ES decorators
+    "noFallthroughCasesInSwitch": true // Report errors for fallthrough cases in switch statement
   },
   "include": [
-    "src"
-  ]
+    "src/**/*" // *** The files TypeScript should type check ***
+  ],
+  "exclude": ["node_modules", "build"] // *** The files to not type check ***
 }
